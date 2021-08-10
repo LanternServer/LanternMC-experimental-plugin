@@ -3,7 +3,7 @@
 namespace LanternServer\lanternMC;
 
 use pocketmine\plugin\PluginBase;
-use pocketmine\plugin\commandSender;
+use pocketmine\plugin\CommandSender;
 use pocketmine\command\Command;
 
 class Main extends PluginBase {
