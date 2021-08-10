@@ -5,7 +5,7 @@ api: 3.0.0
 version: 1.0.0
 
 commands:
-  lanternMC
+  lanternMC:
    description: LanternMC command :)
    usage: "/lanternmc"
    permission: lanternmc.cmd.lanternMC
