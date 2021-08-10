@@ -1,0 +1,13 @@
+name: lanternMC
+author: Blip
+main: LanternServer\lanternMC\main
+api: 3.0.0
+version: 1.0.0
+
+commands:
+  lanternMC
+   description: LanternMC command :)
+   usage: "/lanternmc"
+   permission: lanternmc.cmd.lanternMC
+   default: true
+...
