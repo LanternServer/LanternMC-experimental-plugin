@@ -1,9 +1,9 @@
 <?php
 
-namespace LanternServer\lanternMC
+namespace LanternServer\lanternMC;
 
-use pocketmine\plugin\PluginBase
-use pocketmine\plugin\commandSender
+use pocketmine\plugin\PluginBase;
+use pocketmine\plugin\commandSender;
 use pocketmine\command\Command;
 
 class Main extends PluginBase {
