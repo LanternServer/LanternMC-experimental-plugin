@@ -10,4 +10,9 @@ commands:
    usage: "/lanternmc"
    permission: lanternmc.cmd.lanternMC
    default: true
+
+permissions:
+  lanternmc.cmd.lanternMC:
+    description: "A default lanternMC command"
+    default: true
 ...
