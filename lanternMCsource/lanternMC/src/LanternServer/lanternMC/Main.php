@@ -2,8 +2,11 @@
 
 namespace LanternServer\lanternMC;
 
+use pocketmine\Server;
+use pocketmine\Player;
+
 use pocketmine\plugin\PluginBase;
-use pocketmine\command\CommandSender
+use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 
 class Main extends PluginBase {
@@ -16,10 +19,14 @@ class Main extends PluginBase {
       $this->getServer()->getLogger()->info("[LanternMC custom plugin disabled..]")
     }
 
-    public function onCommand(commandSender $sender, Command $command, string $label, array $args) : bool {
-      switch ($command->getName()) {
+    public function onCommand(commandSender $sender, Command $cmd, string $label, array $args) : bool {
+      switch ($cmd->getName()) {
         case "lanternMC":
-        $sender->sendMessage("[§6Lantern§4MC]§rWelcome to §6Lantern§4MC§r!");
+              if(!isset($args)){
+              $sender->sendMessage("[§6Lantern§4MC]§rWelcome to §6Lantern§4MC§r!");
+                  return true;
+              }
+        
       }
       return true;
     }
